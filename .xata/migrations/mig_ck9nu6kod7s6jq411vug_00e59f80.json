@@ -1,0 +1,19 @@
+{
+  "id": "mig_ck9nu6kod7s6jq411vug",
+  "parentID": "mig_ck9nstkod7s6jq411vsg",
+  "checksum": "1:00e59f802474459152b28c211d6df4c1dfdede77175e61920198e750c60d7e85",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "user",
+          "type": "link",
+          "link": {
+            "table": "users"
+          }
+        },
+        "table": "files"
+      }
+    }
+  ]
+}

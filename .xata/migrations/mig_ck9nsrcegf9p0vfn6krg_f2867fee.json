@@ -1,0 +1,16 @@
+{
+  "id": "mig_ck9nsrcegf9p0vfn6krg",
+  "parentID": "mig_ck9nsk4od7s6jq411vrg",
+  "checksum": "1:f2867feee87c7004875d35dea728fac7c09e3999448b1a4d8778a0885e2a1eb8",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "file",
+          "type": "file"
+        },
+        "table": "files"
+      }
+    }
+  ]
+}

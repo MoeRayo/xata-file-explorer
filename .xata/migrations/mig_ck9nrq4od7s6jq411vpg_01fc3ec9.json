@@ -1,0 +1,13 @@
+{
+  "id": "mig_ck9nrq4od7s6jq411vpg",
+  "parentID": "mig_ck9nqncegf9p0vfn6kqg",
+  "checksum": "1:01fc3ec9884d3dc63edac12e46eb8be533c6c27dd9e5691baedd281ede5a1da0",
+  "operations": [
+    {
+      "removeColumn": {
+        "column": "file",
+        "table": "files"
+      }
+    }
+  ]
+}

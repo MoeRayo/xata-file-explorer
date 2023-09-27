@@ -1,0 +1,7 @@
+{
+  "databaseURL": "https://Olufunke-Moronfolu-s-workspace-vj48pf.us-east-1.xata.sh/db/file-explorer",
+  "codegen": {
+    "output": "src/xata.js",
+    "moduleType": "esm"
+  }
+}
