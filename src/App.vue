@@ -3,5 +3,6 @@
 </script>
 
 <template>
+	<notifications />
 	<RouterView />
 </template>

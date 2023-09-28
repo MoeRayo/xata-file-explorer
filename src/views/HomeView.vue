@@ -10,10 +10,42 @@
 						Storing and managing files made easy with Xata (File Attachments)
 					</h2>
 				</div>
+				<div class="mv2">
+					<div v-if="userHasAccount">
+						<Signin @go-to-sign-up="switchToSignUp" />
+					</div>
+					<div v-else>
+						<Signup @user-has-account="handleUserHasAccount" />
+					</div>
+				</div>
 			</div>
 		</div>
 	</header>
 </template>
+<script>
+	import Signin from "@/components/Signin.vue";
+	import Signup from "@/components/Signup.vue";
+
+	export default {
+		components: {
+			Signin,
+			Signup,
+		},
+		data() {
+			return {
+				userHasAccount: false,
+			};
+		},
+		methods: {
+			handleUserHasAccount(value) {
+				this.userHasAccount = value;
+			},
+			switchToSignUp() {
+				this.userHasAccount = false;
+			},
+		},
+	};
+</script>
 
 <style>
 	.background-container {

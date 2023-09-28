@@ -6,9 +6,9 @@ const tables = [
 	{
 		name: "users",
 		columns: [
-			{ name: "full_name", type: "string" },
-			{ name: "password", type: "string" },
-			{ name: "email", type: "email" },
+			{ name: "username", type: "string", unique: true },
+			{ name: "email", type: "email", unique: true },
+			{ name: "password", type: "string", unique: true },
 		],
 		revLinks: [{ column: "user", table: "files" }],
 	},

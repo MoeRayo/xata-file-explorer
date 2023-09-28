@@ -1,0 +1,13 @@
+{
+  "id": "mig_ckacr8fuqh9bi7t9plog",
+  "parentID": "mig_ckacqn7uqh9bi7t9plng",
+  "checksum": "1:219230b035d2cd40e7532afb06e6ee432f85c1adc3aa91419a166f25f989bb7d",
+  "operations": [
+    {
+      "removeColumn": {
+        "column": "password",
+        "table": "users"
+      }
+    }
+  ]
+}

@@ -9,6 +9,12 @@ const router = createRouter({
 			name: "home",
 			component: HomeView,
 		},
+
+		{
+			path: "/dashboard/:id",
+			name: "dashboard",
+			component: () => import("../views/DashboardView.vue"),
+		},
 	],
 });
 
