@@ -71,7 +71,9 @@
 						})
 						.then((res) => {
 							this.$router.push({
-								path: `/dashboard/${res.username}`,
+								name: "dashboard",
+								params: { username: res.username },
+								query: { user: res },
 							});
 							this.$notify({
 								type: "success",

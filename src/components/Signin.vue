@@ -61,8 +61,8 @@
 					this.password = "";
 				} else {
 					this.$router.push({
-						path: `/dashboard/${user.username}`,
-						params: user,
+						name: "dashboard",
+						params: { id: user.id },
 					});
 					this.$notify({ type: "success", text: "Login successful!" });
 				}
