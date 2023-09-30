@@ -27,3 +27,7 @@ npm run dev
 ```sh
 npm run build
 ```
+
+### Environment Variables
+
+Create a `.env` file to track `VITE_XATA_API_KEY`
