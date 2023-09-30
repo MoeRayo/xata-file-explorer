@@ -36,7 +36,6 @@
 					</div>
 					<div v-else-if="metaData.toLowerCase().includes('pdf')">
 						<vue-pdf-embed :source="fileURL" />
-						<!-- <vue-pdf-app style="height: 50vh" :pdf="fileURL"></vue-pdf-app> -->
 					</div>
 					<div v-else>
 						<p>Unsupported file type.</p>
@@ -72,8 +71,6 @@
 				uploadError: null,
 				currentStatus: null,
 				uploadFieldName: "photos",
-				detectedText: "",
-				shareText: "Copy Text",
 				fileDataObject: {},
 				metaData: "",
 				fileName: "",

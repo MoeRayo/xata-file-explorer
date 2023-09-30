@@ -39,7 +39,6 @@
 		<p class="f7">
 			Already have an account?
 			<a @click="switchToSignin" class="white pointer b">Sign in</a>
-			<!-- johndoe13 -->
 		</p>
 	</form>
 </template>
@@ -72,8 +71,7 @@
 						.then((res) => {
 							this.$router.push({
 								name: "dashboard",
-								params: { username: res.username },
-								query: { user: res },
+								params: { id: res.id },
 							});
 							this.$notify({
 								type: "success",
